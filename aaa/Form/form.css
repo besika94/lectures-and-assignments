@@ -1,0 +1,75 @@
+html {
+  height: 130%;
+}
+
+body {
+  background-color: rgb(19, 99, 215);
+  background: linear-gradient(
+    62deg,
+    rgba(19, 99, 215, 1) 0%,
+    rgba(75, 112, 197, 1) 30%,
+    rgba(152, 53, 233, 1) 46%,
+    rgba(238, 30, 252, 1) 98%
+  );
+}
+form {
+  background-color: white;
+  width: 35em;
+  border-radius: 0.3em;
+  margin: 6.5em;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  text-transform: uppercase;
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+table {
+  padding: 1em;
+  border-collapse: separate;
+  border-spacing: 1em 1.5em;
+  color: rgb(88, 87, 87);
+  display: inline-block;
+}
+label {
+  font-size: 0.8em;
+  color: grey;
+}
+input {
+  border: none;
+  background-color: rgb(197, 194, 194);
+  border-radius: 0.3em;
+  height: 2em;
+}
+select {
+  border: none;
+  background-color: rgb(197, 194, 194);
+  border-radius: 0.3em;
+  height: 2em;
+  color: grey;
+}
+.area {
+  width: 5em;
+}
+.inpspan {
+  width: 29em;
+}
+.spanPHone {
+  width: 21.39em;
+}
+button {
+  border: none;
+  background-color: rgb(226, 17, 139);
+  border-radius: 0.3em;
+  padding: 0.7em 0.5em 0.7em 0.5em;
+  color: white;
+  text-transform: uppercase;
+}
+button:hover {
+  cursor: pointer;
+}

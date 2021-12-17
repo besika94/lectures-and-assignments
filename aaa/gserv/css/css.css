@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  background: #064287;
+}
+
+#services {
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#logo {
+  margin-top: 2em;
+}
+a {
+  text-decoration: none;
+  background-color: rgb(245, 135, 62);
+  padding: 1.2em 1em 0 1em;
+  margin: 2em 0 0 1em;
+  width: 13em;
+  height: 9em;
+  border-radius: 1em;
+  color: #ffffffd3;
+}
+a:hover {
+  color: white;
+  background-color: #125db386;
+  text-decoration: none;
+}
+
+.agsform {
+  width: 3em auto;
+}

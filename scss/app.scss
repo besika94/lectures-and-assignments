@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@mixin link-style {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.788);
+  padding: 10px 10px 10px 0;
+}
+@mixin letter-up {
+  text-transform: uppercase;
+  color: rgb(104, 103, 103);
+}
+body {
+  width: 1300px;
+  max-width: 100%;
+  margin: auto;
+
+  background-image: url(https://images.unsplash.com/photo-1542642839-83adadcbe645?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1922&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.conteiner {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 200px;
+  padding-bottom: 100px;
+
+  .contact {
+    width: 40%;
+    .cont-us {
+      padding: 10px 20px;
+      color: white;
+    }
+
+    li {
+      display: flex;
+      padding: 10px;
+      width: 100%;
+
+      .inf {
+        padding: 10px;
+      }
+      .bi {
+        font-size: 20px;
+        display: inline-block;
+        color: white;
+      }
+
+      a {
+        @include link-style;
+      }
+      h3 {
+        @include letter-up;
+      }
+    }
+  }
+  form {
+    padding: 10px;
+    width: 35%;
+    background: white;
+    border-radius: 20px;
+    .input {
+      padding: 5px;
+      width: 70%;
+      margin: auto;
+
+      input {
+        border-radius: 3px;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid rgba(153, 153, 153, 0.37);
+      }
+      textarea {
+        padding: 10px;
+        width: 100%;
+        border: 1px solid rgba(153, 153, 153, 0.37);
+      }
+    }
+    .form-text {
+      padding: 8px;
+      font-size: large;
+      color: rgb(48, 48, 48);
+      width: 70%;
+      margin: auto;
+    }
+    .btn {
+      padding: 5px;
+      width: 70%;
+      margin: auto;
+      button {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: rgb(0, 153, 255);
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .conteiner {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    .contact,
+    form {
+      margin: auto;
+      width: 70%;
+      .input {
+        width: 100%;
+      }
+    }
+  }
+}

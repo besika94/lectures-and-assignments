@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* height: 18000px; */
+}
+
+a {
+  text-decoration: 0;
+}
+
+header {
+  background: linear-gradient(
+      90deg,
+      rgb(4 121 242 / 53%) 16%,
+      rgb(240 14 212 / 51%) 78%
+    ),
+    url(https://wallpaperaccess.com/full/191519.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box {
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.navbar {
+  margin-left: auto;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li a {
+  display: inline-block;
+  padding: 2px 7px;
+  font-weight: bold;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  width: 60%;
+  display: block;
+  border-radius: 6px;
+  margin-left: auto;
+  min-height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.row.jus {
+  align-items: center;
+}
+
+.but a {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: chocolate;
+  border-radius: 2px;
+  color: #fff;
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+section {
+  width: 60em;
+  height: 40em;
+  display: flex;
+  margin: 7em auto;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 12em;
+  margin: 0.1em;
+}
+.big-img {
+  height: 15em;
+  width: 12em;
+  margin: 0.1em;
+}
+.small-img {
+  height: 10em;
+  width: 12em;
+  margin: 0.1em;
+}
