@@ -7,8 +7,6 @@
 }
 
 .header {
-  width: 1400px;
-  max-width: 100%;
   margin: auto;
   background: #0c177d;
   background: linear-gradient(215deg, #0c177d 39%, #0f1796 63%, #1e26fc 100%);
