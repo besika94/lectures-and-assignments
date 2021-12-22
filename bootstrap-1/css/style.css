@@ -7,7 +7,7 @@ body {
   margin: auto;
 }
 .navbtn {
-  padding: 0 20px;
+  padding: 0 20px 0 0;
 }
 .bg-nav-color {
   background-color: rgba(197, 227, 252, 0.63) !important;
@@ -46,4 +46,20 @@ input[type="text"]::placeholder {
 .bg-secondary {
   background-color: rgb(167, 161, 161) !important;
   border-radius: 15px;
+}
+@media (max-width: 800px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .col-4 {
+    width: 100%;
+  }
+
+  .inner-wdt {
+    width: 100%;
+  }
+  form {
+    width: 80%;
+    margin: auto;
+  }
 }
