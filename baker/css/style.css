@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background: linear-gradient(
+      215deg,
+      rgba(31, 80, 185, 0.6) 39%,
+      rgba(31, 80, 185, 0.6) 63%,
+      rgba(31, 80, 185, 0.6) 100%
+    ),
+    url(https://images.unsplash.com/photo-1639987817247-a87ace8d7376?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-btn-warn {
+  padding: 5px 40px !important;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.header-btn-ligh {
+  padding: 5px 40px !important;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 230, 0);
+  color: rgb(255, 230, 0) !important;
+}
+
+.nav-li-color li a {
+  color: white !important;
+}
+
+.section-1 {
+  background-color: rgba(168, 168, 168, 0.137);
+}
+.section-1-line a {
+  color: orange;
+}
+.big-letter {
+  font-size: 60px;
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-quote-img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 4px solid white;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.col-img {
+  padding: 10px 0 !important;
+}
+
+.section-4 {
+  background-color: grey;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid rgb(255, 196, 0);
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+::placeholder {
+  color: white;
+}
+
+textarea {
+  border: 1px solid rgb(255, 196, 0);
+  color: #fff;
+}
+
+#nav-color {
+  color: rgb(255, 196, 0) !important;
+}
+
+@media (max-width: 800px) {
+  .section-4-contact-us {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .section-4-contact {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    padding-bottom: 50px;
+  }
+  .name,
+  .email {
+    width: 100% !important;
+  }
+  .name {
+    padding-right: 0 !important;
+  }
+}
