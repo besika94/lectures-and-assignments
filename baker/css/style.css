@@ -30,6 +30,26 @@
 
 .nav-li-color li a {
   color: white !important;
+  position: relative;
+}
+.nav-li-color li a::after {
+  content: "";
+  position: absolute;
+  margin: 0 5px;
+  border: 2px solid yellow;
+  background-color: rgb(255, 187, 0);
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  display: none;
+  transition: all 1s ease-in;
+}
+
+.nav-li-color li:hover a {
+  color: rgb(255, 230, 0) !important;
+}
+.nav-li-color li:hover a::after {
+  display: block;
 }
 
 .section-1 {
