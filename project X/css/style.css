@@ -1,3 +1,153 @@
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: AREAL;
+  src: url(../fonts/bpg_arial_2009.ttf);
+}
+@font-face {
+  font-family: NINOMTAVRULI;
+  src: url(../fonts/bpg_nino_mtavruli_normal.ttf);
+}
+/* sub-nav */
+.sub-nav {
+  background-color: #404040b8;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.menu-lang a,
+.menu a {
+  display: inline-block;
+  font-family: NINOMTAVRULI;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 13px 0 7px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a {
+  margin-left: 27px;
+}
+
+/* sub-nav end */
+
+/* Nav-Bar*/
+
+.navbar {
+  position: absolute;
+  z-index: 1;
+  top: 42px;
+  width: 100%;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-links {
+  font-family: NINOMTAVRULI;
+  font-size: 17px;
+  font-weight: bold;
+  color: #6b6b6b;
+  display: inline-block;
+  padding-right: 30px !important;
+  padding-top: 17px;
+}
+
+.navbar-brand {
+  padding-top: 17px !important;
+}
+
+.navbar-last-link {
+  padding-right: 0 !important;
+}
+.navbar-links img {
+  padding-right: 12px;
+}
+.dog-icon {
+  position: relative;
+  top: -8px;
+  right: -7px;
+}
+
+.dropdown-menu li {
+  border-bottom: solid 1px #c3cbcc;
+}
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+.dropdown-menu a {
+  display: inline-block;
+  font-size: 14px;
+  color: #4b4b4b;
+  font-family: AREAL;
+  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-left: 18px;
+  padding-right: 116px;
+}
+
+.food {
+  padding-top: 8px !important;
+}
+
+.features {
+  padding-bottom: 6px !important ;
+}
+
+.dropdown-menu-dog::before,
+.dropdown-menu-bird::before {
+  content: "";
+  border: 2px solid red;
+  width: 121px;
+  position: absolute;
+  top: -2px;
+}
+
+.dropdown-menu-cat::before,
+.dropdown-menu-fish::before {
+  content: "";
+  border: 2px solid red;
+  width: 105px;
+  position: absolute;
+  top: -2px;
+}
+
+/* Nav-Bar end*/
+
+.carousel-item {
+  height: 730px;
+  background-image: url(../img/carousel-photo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .dropdown-menu {
+    position: absolute;
+    top: 89px;
+    left: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1121px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    position: absolute;
+    top: 80px;
+  }
+  .menu a:first-child {
+    margin-left: 0;
+  }
 }
