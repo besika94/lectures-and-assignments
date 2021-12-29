@@ -123,6 +123,76 @@
   background-size: cover;
 }
 
+.col-5 {
+  margin-top: 16px;
+  width: 222px !important;
+  height: 106px !important;
+}
+
+.content {
+  margin-top: 200px;
+}
+
+.content-title {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: NINOMTAVRULI;
+}
+
+.content-text {
+  margin-top: 20px;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: AREAL;
+}
+
+.content-btn {
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: NINOMTAVRULI;
+  background-color: #e23848;
+  border: none;
+  padding: 15px 30px 8px 35px;
+  text-decoration: none;
+}
+
+/* footer */
+footer {
+  background-color: rgb(244, 247, 236);
+}
+
+.footer-img {
+  border: 1px solid #d2d2d2;
+  background-color: #fff;
+}
+.footer-img img {
+  width: 100%;
+}
+.brand-img-1 {
+  padding: 10px 13px 12px 13px;
+}
+
+.brand-img-2 {
+  padding: 20px 13px 23px 13px;
+}
+
+.brand-img-3 {
+  padding: 30px 10px 10px 10px;
+}
+.brand-img-4 {
+  padding: 30px 10px 20px 10px;
+}
+
+.brand-img-5 {
+  width: 88.3% !important;
+  padding-bottom: 1px;
+}
+
+/* footer end */
+
 @media (min-width: 992px) {
   .navbar-expand-lg .dropdown-menu {
     position: absolute;
@@ -143,11 +213,14 @@
 }
 
 @media (max-width: 991px) {
+  .menu a:first-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
   .navbar {
     position: absolute;
     top: 80px;
-  }
-  .menu a:first-child {
-    margin-left: 0;
   }
 }
