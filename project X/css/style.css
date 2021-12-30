@@ -191,6 +191,13 @@ footer {
   padding-bottom: 1px;
 }
 
+.copyright {
+  color: #828282;
+  font-weight: bold;
+  font-family: Arial;
+  font-size: 15px;
+}
+
 /* footer end */
 
 @media (min-width: 992px) {
@@ -222,5 +229,12 @@ footer {
   .navbar {
     position: absolute;
     top: 80px;
+  }
+}
+
+@media (max-width: 443px) {
+  .col-5 {
+    margin: auto;
+    margin-top: 5px;
   }
 }
