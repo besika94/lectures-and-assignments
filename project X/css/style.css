@@ -115,6 +115,7 @@
 
 /* Nav-Bar end*/
 
+/*carousel */
 .carousel-item {
   height: 730px;
   background-image: url(../img/carousel-photo.png);
@@ -123,7 +124,7 @@
   background-size: cover;
 }
 
-.col-5 {
+.col-5-size {
   margin-top: 16px;
   width: 222px !important;
   height: 106px !important;
@@ -158,6 +159,8 @@
   padding: 15px 30px 8px 35px;
   text-decoration: none;
 }
+
+/*carousel end */
 
 /* footer */
 footer {
@@ -233,7 +236,7 @@ footer {
 }
 
 @media (max-width: 443px) {
-  .col-5 {
+  .col-5-size {
     margin: auto;
     margin-top: 5px;
   }
