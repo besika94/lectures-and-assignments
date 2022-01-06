@@ -1,0 +1,323 @@
+@font-face {
+  font-family: SANET;
+  src: url(../fonts/alk-sanet.ttf);
+}
+@font-face {
+  font-family: BPGARIAL;
+  src: url(../fonts/bpg_arial_2009.ttf);
+}
+
+.header {
+  background-image: url(../img/header-img.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+/* Logo */
+.navbar-brand {
+  position: relative;
+}
+
+.navbar-brand img {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-brand::before {
+  content: "";
+  width: 123px;
+  height: 150px;
+  border: 3px solid #757575;
+  position: absolute;
+  left: 6px;
+  top: 7px;
+}
+
+/* Logo end */
+
+/*navbar*/
+.nav-link {
+  color: white !important;
+}
+
+.nav-item a:hover {
+  color: #fdc61f !important;
+}
+
+.nav-item {
+  margin-top: 27px;
+}
+
+.nav-item a {
+  font-family: SANET;
+  font-size: 16px;
+  padding: 0px !important;
+  margin-left: 12px;
+}
+
+.navbar-nav li:first-child {
+  margin-left: 49px;
+}
+
+/*navbar end*/
+
+/* header content */
+.header-content p {
+  color: #ecd53a;
+  font-size: 24px;
+  font-family: SANET;
+  width: 50%;
+  margin-top: 78px;
+  margin-bottom: 65px;
+}
+
+.header-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: SANET;
+}
+
+.header-content a:hover {
+  color: #eac040;
+}
+
+/* calculator */
+.nav-calc {
+  margin-top: 25px;
+}
+
+.nav-calc a {
+  text-decoration: none;
+}
+
+.nav-calc a img {
+  width: 17px;
+  height: 17px;
+}
+
+.nav-calc a:first-child {
+  display: inline-block;
+  padding: 2px 8px 6px 7px;
+  background-color: #f5c01f33;
+  margin-left: 0px;
+}
+
+.nav-calc a:nth-child(2) {
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  margin-left: 9px;
+  padding: 9px 8px 10px 5px;
+  background-color: rgba(255, 255, 255, 0.288);
+}
+
+.nav-calc a:last-child {
+  margin-left: 9px;
+  border: 1px solid white;
+  font-size: 12px;
+  color: #fdc61f;
+  font-family: SANET;
+  padding: 8px 8px 7px 5px;
+}
+
+/* calculator end */
+
+/* section */
+
+.section {
+  background-color: #474d5d;
+  padding-top: 30px;
+}
+
+.col-6 {
+  margin-bottom: 40px;
+}
+
+.left-cont {
+  width: 100%;
+  max-width: 900px;
+  background-color: #3d4251;
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+
+.col-6-cont {
+  background-color: #474d5d;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+
+.col-6-text {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-family: SANET;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.aside-inner {
+  background-color: #27353d;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  padding-left: 65px;
+  padding-right: 55px;
+}
+
+.aside-inner span {
+  font-size: 60px;
+  font-family: SANET;
+  color: #43db34;
+}
+
+.aside-text {
+  margin-bottom: 90px;
+}
+
+/* about */
+
+.about {
+  background-color: #1d242b;
+}
+
+.about-us {
+  margin-top: 20px;
+  margin-bottom: 53px;
+  padding-left: 45px;
+  position: relative;
+}
+
+.about-us a {
+  font-size: 18px;
+  color: #f5c82c;
+  font-family: SANET;
+  text-decoration: none;
+}
+
+.about-us-img {
+  margin-top: 30px;
+  margin-bottom: 55px;
+  position: relative;
+}
+
+.about-us-img img {
+  position: relative;
+}
+
+.about-us-img::before {
+  content: "";
+  width: 123px;
+  height: 150px;
+  border: 3px solid #757575;
+  position: absolute;
+  left: 6px;
+  top: 7px;
+}
+
+.about-us p {
+  color: white;
+  font-size: 12px;
+  font-family: BPGARIAL;
+  width: 70%;
+}
+/* about */
+
+/* services */
+
+.services {
+  margin-top: 28px;
+}
+
+.services a {
+  display: inline-block;
+  font-size: 18px;
+  color: #f5c82c;
+  font-family: SANET;
+  text-decoration: none;
+}
+
+.services ul {
+  padding: 0;
+  margin-top: 16px;
+}
+
+.services li {
+  list-style: none;
+}
+
+.services li a {
+  color: white;
+  font-size: 16px;
+  font-family: BPGARIAL;
+}
+
+/* pages */
+
+.pages {
+  margin-top: 28px;
+}
+
+.pages ul {
+  margin-top: 16px;
+}
+
+.pages a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: #f5c82c;
+  font-family: SANET;
+  text-decoration: none;
+}
+
+.pages li a {
+  color: white;
+  font-size: 14px;
+  font-family: BPGARIAL;
+}
+
+/*addres*/
+
+.addres {
+  margin-top: 28px;
+}
+
+.addres a {
+  display: inline-block;
+  font-size: 18px;
+  color: #f5c82c;
+  font-family: SANET;
+  text-decoration: none;
+}
+
+.font-16 {
+  font-size: 16px !important;
+  font-family: BPGARIAL !important;
+  color: white !important;
+}
+
+.font-14 {
+  font-size: 14px !important;
+  font-family: BPGARIAL !important;
+  color: white !important;
+  margin-bottom: 34px;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1400px;
+  }
+}

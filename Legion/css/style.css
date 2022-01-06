@@ -46,6 +46,10 @@
   margin-top: 27px;
 }
 
+.nav-item a:hover {
+  color: #fdc61f !important;
+}
+
 .nav-item a {
   font-family: SANET;
   font-size: 16px;
@@ -85,7 +89,7 @@
   font-weight: 700;
   color: white;
   margin-left: 9px;
-  padding: 9px 8px 10px 5px;
+  padding: 8px 8px 7px 5px;
   background-color: rgba(255, 255, 255, 0.288);
 }
 
@@ -500,7 +504,7 @@
 @media (max-width: 767px) {
   .section-2-picture {
     background-position: center;
-    width: 100%;
+    width: 300px;
   }
 
   .nav-calc {
