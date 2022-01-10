@@ -38,8 +38,8 @@ html {
 }
 
 .header-logo {
-  padding-top: 18px;
-  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-bottom: 14px;
   margin-right: 77px;
 }
 
@@ -190,6 +190,46 @@ button.active::before {
   color: var(--orange);
 }
 
+.violet {
+  position: relative;
+  left: 0;
+  bottom: 125px;
+  z-index: 2;
+}
+
+.violet-circle {
+  position: relative;
+  bottom: 368px;
+  left: 60px;
+  z-index: 3;
+}
+
+.food-icon {
+  position: relative;
+  bottom: 434px;
+  left: 79px;
+  z-index: 4;
+}
+
+.violet-line {
+  position: relative;
+  bottom: 461px;
+  left: 8px;
+  z-index: 2;
+}
+
+.violet-text {
+  position: relative;
+  bottom: 584px;
+  left: 52px;
+  z-index: 2;
+}
+
+.explore-icon {
+  max-height: 10px;
+  max-width: 10px;
+}
+
 .sub-header {
   background-color: #edf1f3 !important;
   border-bottom: 1px solid #dde3e7;
@@ -207,6 +247,7 @@ button.active::before {
 }
 .sub-header-icon {
   padding-top: 5px;
+  margin-left: auto;
 }
 
 .review-text {
@@ -288,6 +329,6 @@ button.active::before {
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1190px;
+    max-width: 1194px;
   }
 }
