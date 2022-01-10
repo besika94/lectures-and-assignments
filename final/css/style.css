@@ -345,6 +345,10 @@ button.active::before {
   border-radius: 4px;
 }
 
+.award-logo {
+  margin-left: 50px;
+}
+
 .restaurant-img {
   width: 100%;
   height: 100%;
