@@ -21,6 +21,7 @@
 :root {
   --orange: #fea100;
   --black: #14141d;
+  --grey: #5c6369;
 }
 
 * {
@@ -345,7 +346,7 @@ button.active::before {
 .about-head p {
   font-family: SINTONY-REGULAR;
   font-size: 14px;
-  color: #5c6369;
+  color: var(--grey);
   margin-bottom: 46px;
   padding-right: 20px;
 }
@@ -388,32 +389,14 @@ button.active::before {
 
 /* food menu carousel start */
 
-.carousel-indicators-1 [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  border-radius: 50%;
-  width: 14px;
-  height: 14px;
-  padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: transparent;
-  background-clip: padding-box;
-  border: solid 2px #fff;
-  margin-bottom: 5px;
-  opacity: 0.5;
-  transition: opacity 0.6s ease;
-}
-
-.carousel-indicators-1 {
+.right-corner {
   position: absolute;
   justify-content: flex-end;
-  right: 0;
-  top: 117px;
+  right: 0px !important;
+  top: 175px !important;
   z-index: 2;
   display: flex;
+  flex-direction: row;
   padding: 0;
   margin-right: 0;
   margin-bottom: 0px;
@@ -423,20 +406,49 @@ button.active::before {
 
 .food-menu-carousel {
   background-image: url(../img/__background.png);
-  background-size: 100% 440px cover;
+  background-size: 100% 440px;
   background-repeat: no-repeat;
+  background-position: top;
+}
+
+.today-special {
+  margin-top: 158px;
+  font-family: DISPLAY-BOLD;
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 26px;
 }
 
 .food-menu-card {
-  margin-top: 158px;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 24px 19px;
-  margin-bottom: 300px;
+}
+
+.menu-card img {
+  width: 569px;
+  height: 420px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.right-side-img img {
+  position: absolute;
+  right: -130px;
+  bottom: -107px;
+  z-index: -1;
+  width: auto;
+  max-width: 311px;
+  height: 100%;
+  max-height: 311px;
+  object-fit: cover;
 }
 
 .food-menu-card-cont {
   padding: 50px;
   padding-bottom: 30px;
+  background-color: #fff;
+  margin-bottom: 22px;
 }
 .food-menu-card-cont h1 {
   font-family: DISPLAY-BOLD;
@@ -448,7 +460,7 @@ button.active::before {
 .food-menu-card-cont p {
   font-family: SINTONY-REGULAR;
   font-size: 14px;
-  color: #5c6369;
+  color: var(--grey);
 }
 
 .menu-delivary .delivery {
@@ -484,6 +496,143 @@ button.active::before {
 }
 
 /* food menu carousel end */
+
+/* food-menu-section start */
+
+.food-menu-section-title {
+  margin-top: 70px;
+  font-size: 35px;
+  font-family: DISPLAY-BOLD;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+
+.food-menu-section ul {
+  border-bottom: dashed 1px #e1e1e1;
+}
+
+.food-menu-section li a {
+  display: block;
+  text-align: center;
+}
+
+.food-menu-section li {
+  margin-left: 50px;
+  padding-bottom: 17px;
+}
+
+.food-menu-section ul li:last-child {
+  margin-right: 100px;
+}
+
+.food-menu-section li a:last-child {
+  font-family: DISPLAY-BOLD;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.section-left-menu-text {
+  padding-bottom: 21px;
+  padding-top: 25px;
+}
+
+.section-left-menu-text a:first-child {
+  font-size: 16px;
+  color: var(--black);
+  font-family: SINTONY-BOLD;
+}
+
+.section-left-menu-text a:last-child {
+  font-size: 14px;
+  color: var(--grey);
+  font-family: SINTONY-REGULAR;
+}
+
+.sec-menu-price {
+  padding-top: 25px;
+  margin-right: 40px;
+}
+
+.food-menu-section-btn {
+  margin-top: 25px;
+}
+
+.food-menu-section-btn a {
+  color: #fff;
+  padding: 14px 30px;
+  background-color: var(--orange);
+  border-radius: 4px;
+}
+
+.img-241x241 {
+  position: relative;
+  height: 100px;
+}
+
+.img-241x241 img {
+  position: absolute;
+  right: 30px;
+  top: -62px;
+}
+
+/* food-menu-section end */
+
+/* bottom-carousel start */
+
+.bottom-carousel {
+  height: 465px;
+  max-height: 100%;
+  background-image: url(../img/background.png);
+  background-repeat: no-repeat;
+}
+
+.reviwer-img {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  object-fit: cover;
+}
+
+.bi-chevron-right,
+.bi-chevron-left {
+  height: 50px;
+  color: white;
+}
+
+.carousel-control-next {
+  position: absolute;
+  justify-content: flex-end !important;
+}
+
+.carousel-control-prev {
+  justify-content: flex-start !important;
+}
+
+.bottom-carousel-inner {
+  height: 465px !important;
+  max-height: 100% !important;
+}
+
+.bottom-carousel-item h1 {
+  margin-top: 100px;
+  font-size: 35px;
+  font-family: DISPLAY-BOLD;
+}
+
+.bottom-carousel-item p {
+  margin-top: 25px !important;
+  margin-bottom: 15px !important;
+  font-size: 15px;
+  font-family: SINTONY-REGULAR !important;
+  font-weight: 400 !important;
+}
+
+.bottom-carousel-item a {
+  margin-top: 15px !important;
+  font-size: 16px;
+  font-family: SINTONY-BOLD !important;
+}
 
 /* media queri */
 
