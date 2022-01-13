@@ -195,8 +195,12 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged...
             </p>
-            <a class="d-inline-block text-uppercase" href="#">read more</a>
-            <img class="award-logo" src="img/award logo.png" alt="" />
+            <div class="about-btn-logo">
+              <a class="d-inline-block text-uppercase" href="#">read more</a>
+              <div class="award-logo">
+                <img src="img/award logo.png" alt="" />
+              </div>
+            </div>
           </div>
           <div class="col-md-6 col-12">
             <div class="row">
@@ -255,7 +259,7 @@
             <h1 class="text-center today-special">Today Special</h1>
             <div class="carousel-item active">
               <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                   <div class="food-menu-card">
                     <a class="card-img" href=""
                       ><img
@@ -290,7 +294,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 food-menu-carousel-half-slide">
                   <div class="food-menu-card">
                     <a href=""
                       ><img
@@ -329,7 +333,7 @@
             </div>
             <div class="carousel-item">
               <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                   <div class="food-menu-card">
                     <a href=""
                       ><img
@@ -364,7 +368,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 food-menu-carousel-half-slide">
                   <div class="food-menu-card">
                     <a href=""
                       ><img
@@ -403,7 +407,7 @@
             </div>
             <div class="carousel-item">
               <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                   <div class="food-menu-card">
                     <a href=""
                       ><img
@@ -438,7 +442,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 food-menu-carousel-half-slide">
                   <div class="food-menu-card">
                     <a href=""
                       ><img
@@ -485,7 +489,7 @@
 
     <section class="food-menu-section">
       <h1 class="text-center food-menu-section-title">Food Menu</h1>
-      <ul class="d-flex justify-content-center flex-wrap">
+      <ul class="d-flex justify-content-lg-center flex-wrap">
         <li>
           <a href="#"><img src="img/icon_all.png" alt="" /></a>
           <a href="#">All</a>
@@ -515,6 +519,9 @@
           <a href="#">Dinner</a>
         </li>
       </ul>
+      <div class="left-side-img">
+        <img src="img/Folder 3.png" alt="" />
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 mt-2">
@@ -735,6 +742,115 @@
         </div>
       </div>
     </section>
+
+    <section class="reserve-section container">
+      <h1 class="reserve-title text-center">Reserve your table</h1>
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="reserve-section-img">
+            <img src="img/__image-1.png" alt="" />
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <form class="reserve-form" action="#">
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="reserve-intput">
+                  <input placeholder="Name*" type="text" />
+                  <i class="bi bi-person"></i>
+                </div>
+                <div class="reserve-intput">
+                  <input placeholder="Time*" type="text" />
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="reserve-intput">
+                  <input placeholder="Guests*" type="text" />
+                  <i class="bi bi-people"></i>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="reserve-intput">
+                  <input placeholder="Date*" type="text" />
+                  <i class="bi bi-calendar4-week"></i>
+                </div>
+                <div class="reserve-intput">
+                  <input placeholder="Email Address*" type="email" />
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="reserve-intput">
+                  <input placeholder="Phone Number*" type="number" />
+                  <i class="bi bi-phone"></i>
+                </div>
+              </div>
+              <div class="col-12 reserv-call">
+                <div class="row reserve-col-row">
+                  <div class="col-md-5 col-8 reserv-btn-div">
+                    <a class="d-inline-block reserv-btn text-uppercase" href="#"
+                      >Make reservation</a
+                    >
+                  </div>
+                  <div class="col-md-3 col-4 reserv-col-3">
+                    <div class="reserv-text">
+                      <a href="#">You can also call</a>
+                      <a href="#">for a reservation</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-5">
+                    <div class="reserv-num">
+                      <img src="img/1-007 000 005.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row footer-cont">
+          <div class="row">
+            <div class="col-md-3 col-12">
+              <h1 class="text-white">Navigation</h1>
+              <ul class="p-0 m-0">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Recipe</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-12 mt-md-0 mt-5 footer-subscribe">
+              <h1>News letter</h1>
+              <form action="#">
+                <p>Enter your email address and subscribe daily newsletter</p>
+                <div class="subscribe d-inline-block col-7">
+                  <i class="bi bi-envelope"></i>
+                  <input placeholder="Email Address" type="email" />
+                </div>
+                <a class="d-inline-block text-uppercase" href="#">Subscribe</a>
+              </form>
+            </div>
+            <div class="col-md-3 col-12 mt-md-0 mt-5">
+              <h1 class="text-white">Our app avilable</h1>
+              <div class="app-img">
+                <a href="#"><img src="img/_ app store.png" alt="" /></a>
+              </div>
+              <div class="app-img">
+                <a class="mt-2 d-block" href="#"
+                  ><img src="img/_ google play.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

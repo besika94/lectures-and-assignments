@@ -361,7 +361,13 @@ button.active::before {
 }
 
 .award-logo {
+  display: inline-block;
   margin-left: 50px;
+}
+
+.award-logo img {
+  width: 100%;
+  max-width: 236px;
 }
 
 .restaurant-img {
@@ -562,6 +568,7 @@ button.active::before {
   padding: 14px 30px;
   background-color: var(--orange);
   border-radius: 4px;
+  font-family: SINTONY-BOLD;
 }
 
 .img-241x241 {
@@ -571,8 +578,18 @@ button.active::before {
 
 .img-241x241 img {
   position: absolute;
-  right: 30px;
+  right: 35px;
   top: -62px;
+}
+
+.left-side-img {
+  height: 0px;
+}
+
+.left-side-img img {
+  position: relative;
+  left: 0;
+  top: -154px;
 }
 
 /* food-menu-section end */
@@ -634,6 +651,157 @@ button.active::before {
   font-family: SINTONY-BOLD !important;
 }
 
+/* bottom carousel end */
+
+/* reserve-section start */
+
+.reserve-section {
+  margin-bottom: 100px;
+}
+
+.reserve-section-img {
+  display: flex;
+  justify-content: center;
+}
+
+.reserve-section-img img {
+  width: 100%;
+  max-width: 559px;
+}
+
+.reserve-title {
+  font-size: 35px;
+  font-family: DISPLAY-BOLD;
+  color: var(--black);
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.reserve-form input {
+  border: none;
+  outline: none;
+}
+.reserve-form i {
+  display: inline-block;
+  font-size: 18px;
+  color: #363d43;
+}
+
+.reserve-intput {
+  border-bottom: 1px solid #c7d1d6;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reserv-call {
+  margin-top: 45px;
+}
+.reserv-call a {
+  color: #fff;
+}
+.reserv-btn {
+  padding: 20px 31px 20px 31px;
+
+  font-size: 14px;
+  font-family: SINTONY-BOLD;
+  background-color: var(--orange);
+  border-radius: 4px;
+}
+
+.reserv-text {
+  margin-top: 10px;
+}
+
+.reserv-text a {
+  display: block;
+  font-size: 13px;
+  font-family: SINTONY-BOLD;
+  text-transform: uppercase;
+}
+
+.reserv-text a:first-child {
+  color: var(--black);
+}
+
+.reserv-text a:last-child {
+  color: #fe4c8d;
+}
+
+.reserv-num {
+  border-left: 1px solid #c7d1d6;
+  margin-top: 10px;
+}
+
+.reserv-num img {
+  padding: 10px 0px 10px 8px;
+  width: 100%;
+}
+/* reserve-section end */
+
+/* footer srart */
+
+footer {
+  background-color: #373844;
+}
+
+.footer-cont {
+  padding-top: 97px;
+  padding-bottom: 80px;
+}
+
+.footer-cont h1 {
+  font-size: 24px;
+  font-family: DISPLAY-BOLD;
+  margin-bottom: 27px;
+  color: #fff;
+}
+
+.footer-cont li a {
+  font-size: 14px;
+  font-family: SINTONY-REGULAR;
+  color: #adb2b7;
+}
+
+.footer-subscribe p {
+  font-size: 14px;
+  color: #adb2b7;
+  font-family: SINTONY-REGULAR;
+}
+
+.footer-subscribe a {
+  font-size: 14px;
+  color: #fff;
+  font-family: SINTONY-REGULAR;
+  padding: 18px 30px 15px 30px;
+  background-color: var(--orange);
+  border-radius: 4px;
+}
+
+.subscribe {
+  border: 2px solid #52535e;
+  border-radius: 4px;
+}
+
+.subscribe i {
+  color: var(--orange);
+  font-size: 14px;
+  margin-left: 16px;
+}
+
+.subscribe input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 13px 0px 13px 13px;
+}
+
+.app-img img {
+  width: 100%;
+}
+
+/* footer end */
+
 /* media queri */
 
 @media (min-width: 1400px) {
@@ -657,6 +825,44 @@ button.active::before {
   .sub-header-right-cont {
     border-left: none;
   }
+
+  .img-241x241 {
+    display: none;
+  }
+
+  .right-side-img {
+    display: none;
+  }
+
+  .left-side-img {
+    display: none;
+  }
+
+  .food-menu-section-btn {
+    margin-bottom: 20px;
+  }
+
+  .food-menu-carousel-half-slide {
+    display: none;
+  }
+  .delivery-number {
+    border-left: none;
+    margin-right: 5px;
+  }
+  .delivery-number img {
+    width: 100%;
+    padding: 15px 0 10px 5px;
+    margin-right: 5px;
+  }
+
+  .delivery-price img {
+    width: 100%;
+    padding-top: 0 !important;
+  }
+
+  .food-menu-card-cont {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -664,6 +870,8 @@ button.active::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 30px;
   }
 
   .restaurant-gallery-2 {
@@ -671,11 +879,63 @@ button.active::before {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 8px;
+    margin-bottom: 20px;
+  }
+
+  .reserve-col-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reserv-btn-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reserv-text {
+    margin: 15px 0;
+    padding: 0;
+  }
+  .reserv-col-3 {
+    margin: 15px 0;
+  }
+
+  .reserv-num {
+    border-left: none;
+    margin-top: 10px;
+  }
+
+  .food-menu-section li {
+    margin-left: 10px !important;
+    width: 79px !important;
   }
 }
 
 @media (max-width: 575px) {
   .phone-icon {
     margin-left: 0px;
+  }
+
+  .subscribe {
+    display: block !important;
+    margin-bottom: 10px;
+  }
+
+  .subscribe i {
+    display: none;
+  }
+
+  .about-btn-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .award-logo {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .bottom-carousel-item h1 {
+    margin-top: 0px;
   }
 }
