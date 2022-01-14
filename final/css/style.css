@@ -804,6 +804,13 @@ footer {
 
 /* media queri */
 
+@media (max-width: 1435px) and (min-width: 992px) {
+  .right-side-img img {
+    right: 2px;
+    bottom: -141px;
+  }
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -937,5 +944,13 @@ footer {
   }
   .bottom-carousel-item h1 {
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .award-logo {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 20px;
   }
 }
