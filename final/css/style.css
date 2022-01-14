@@ -59,6 +59,10 @@ html {
   position: relative;
 }
 
+.dropdown-item {
+  margin-left: 0 !important;
+}
+
 .dropdown-toggle::before {
   content: "3";
   width: 15px;
