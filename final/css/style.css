@@ -411,7 +411,7 @@ button.active::before {
 }
 
 .food-menu-carousel {
-  background-image: url(../img/__background.png);
+  background-image: url(../img/humbackground.png);
   background-size: 100% 440px;
   background-repeat: no-repeat;
   background-position: top;
