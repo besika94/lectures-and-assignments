@@ -1044,6 +1044,10 @@ footer {
     margin-left: 10px !important;
     width: 79px !important;
   }
+
+  .open-ours-img {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1071,6 +1075,10 @@ footer {
   }
   .bottom-carousel-item h1 {
     margin-top: 0px;
+  }
+
+  .sec-menu-price {
+    margin-right: 5px;
   }
 }
 
