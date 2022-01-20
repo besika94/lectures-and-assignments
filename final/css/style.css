@@ -321,15 +321,11 @@ button.active::before {
   color: var(--orange);
 }
 
-.call-us-number img {
-  padding-bottom: 10px;
-}
-
 .call-us-number a {
   display: inline-block;
   font-size: 32px;
   color: var(--black);
-  font-family: DISPLAY-BOLD;
+  font-family: SINTONY-BOLD;
   padding-left: 22px;
   border-left: 1px solid #dde3e7;
 }
@@ -484,8 +480,24 @@ button.active::before {
   border-left: 1px solid #e1e1e1;
 }
 
-.delivery-number img {
-  padding: 10px 0 10px 20px;
+.delivery-number a {
+  font-family: SINTONY-BOLD;
+  font-size: 26px;
+  color: var(--black);
+  padding-left: 20px;
+}
+
+.delivery-price a {
+  font-size: 30px;
+  color: var(--orange);
+  font-family: SINTONY-BOLD;
+}
+
+.delivery-price a i {
+  font-size: 17px;
+  margin-bottom: 19px;
+  position: relative;
+  top: -11px;
 }
 
 .delivery-text a {
@@ -560,6 +572,17 @@ button.active::before {
 .sec-menu-price {
   padding-top: 25px;
   margin-right: 40px;
+  color: var(--orange) !important;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.sec-menu-price i {
+  font-size: 15px;
+
+  margin-bottom: 19px;
+  position: relative;
+  top: -7px;
 }
 
 .food-menu-section-btn {
@@ -966,7 +989,7 @@ footer {
     margin-right: 5px;
   }
 
-  .delivery-price img {
+  .delivery-price a {
     width: 100%;
     padding-top: 0 !important;
   }
