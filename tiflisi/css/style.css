@@ -24,6 +24,7 @@ li {
   src: url(../fonts/Raleway-Regular.ttf);
 }
 
+/* header start */
 header {
   background-image: linear-gradient(
       0deg,
@@ -63,11 +64,6 @@ header {
 .info-line {
   margin: 0 11px;
   color: #1c3729;
-}
-
-.navbar-collapse {
-  background-color: #1b192362;
-  border-radius: 4px;
 }
 
 .nav-logo {
@@ -178,6 +174,167 @@ option {
   color: #1c3729;
 }
 
+/* header end */
+
+/* order section start */
+
+.order-cont {
+  justify-content: space-between;
+}
+
+.takeawey {
+  background-color: #1c1b24;
+  border-radius: 22px;
+  margin-top: 40px;
+  margin-bottom: 65px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 15px 19px;
+  width: 374px;
+  max-width: 100%;
+  overflow: hidden !important;
+  position: relative;
+}
+
+.takeawey-title {
+  font-size: 24px;
+  color: GREY;
+  font-family: ROBOTO;
+  text-transform: uppercase;
+  padding-top: 40px;
+  margin-left: 33px;
+}
+
+.takeawey a {
+  display: inline-block;
+  color: white;
+  font-size: 12px;
+  font-family: ROBOTO;
+  background-color: #f36801;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 6px 45px;
+  margin-top: 75px;
+  margin-left: 36px;
+  position: relative;
+  z-index: 2;
+}
+.takeawey img {
+  margin-bottom: 22px;
+  margin-left: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.delivery-img {
+  margin-left: 29px !important;
+  margin-bottom: 0 !important;
+}
+
+.delivery-link {
+  background-color: #45b175 !important;
+}
+
+.book-room {
+  background-color: #b741c9 !important;
+}
+
+.elipse-1 {
+  width: 502px;
+  height: 309px;
+  fill: #232235;
+  transform: rotate(170deg);
+  position: absolute;
+  left: 57px;
+  top: 61px;
+  z-index: 1;
+}
+
+.food-menu-links {
+  margin-bottom: 65px;
+}
+
+.food-menu-links a {
+  font-family: ROBOTO;
+  font-size: 16px;
+  color: #353643;
+  font-weight: bold;
+  border: solid 1px #353643;
+  border-radius: 21px;
+  width: 140px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0 8px 0;
+  margin-left: 30px;
+}
+
+.food-menu-links a:first-child {
+  margin-left: 3px !important;
+}
+
+.food-menu-links a:hover {
+  background-color: #d1fff9;
+  border: none;
+}
+
+.food-menu-options {
+  border-left: dashed 1px grey;
+  border-bottom: dashed 1px grey;
+  border-radius: 10px;
+  padding-left: 60px;
+}
+
+.menu-options-number {
+  width: 0px;
+  height: 0;
+}
+
+.rounded-number {
+  border-radius: 50%;
+  background-color: #f36801;
+  color: white;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-family: ROBOTO;
+  font-weight: bold;
+  padding-top: 3px;
+  position: relative;
+  left: -86px;
+}
+
+.menu-options-title {
+  width: 99%;
+}
+.menu-price {
+  text-align: end;
+}
+
+.menu-price span {
+  font-size: 16px;
+  font-family: ROBOTO;
+  color: #38415f;
+}
+.menu-options-title a {
+  font-size: 18px;
+  color: #38415f;
+  font-weight: bold;
+  font-family: ROBOTO;
+
+  display: inline-block;
+}
+
+.menu-options-descr {
+  font-size: 12px;
+  font-family: ROBOTO;
+  color: #38415f;
+  width: 80%;
+  margin-bottom: 10px !important;
+}
+
+.menu-options-side {
+  justify-content: space-between;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -213,5 +370,23 @@ option {
 
   .navbar-nav li:first-child {
     margin-left: 20px !important;
+  }
+
+  .navbar-collapse {
+    background-color: #1b192362;
+    border-radius: 4px;
+  }
+
+  .order-cont {
+    justify-content: space-around;
+  }
+
+  .takeawey {
+    margin-top: 35px;
+    margin-bottom: 0px;
+  }
+
+  .food-menu-links a {
+    margin-top: 15px;
   }
 }
