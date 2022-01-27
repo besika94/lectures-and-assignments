@@ -24,6 +24,11 @@ li {
   src: url(../fonts/Raleway-Regular.ttf);
 }
 
+@font-face {
+  font-family: R-BLACK;
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
 /* header start */
 header {
   background-image: linear-gradient(
@@ -331,8 +336,168 @@ option {
   margin-bottom: 10px !important;
 }
 
+.hotel-cont,
+.hotel-card-price,
 .menu-options-side {
   justify-content: space-between;
+}
+
+.our-hotels h1 {
+  margin-top: 80px;
+  font-size: 30px;
+  color: #000000;
+  font-family: ROBOTO;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0px !important;
+}
+
+.hot-card-content {
+  margin: 0 15px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  padding: 13px;
+  top: -27px;
+  box-shadow: rgba(209, 252, 239, 0.7) 7.069px 33.257px 28.5px;
+}
+
+.hotel-card-price {
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.hotels-card {
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-bottom: 65px;
+  /*  */
+  width: 374px;
+  max-width: 100%;
+  padding: 0 !important;
+}
+
+.hotels-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.hotel-card-title {
+  font-size: 16px;
+  font-family: ROBOTO;
+  color: #000000;
+  font-weight: bold;
+}
+
+.hotel-price {
+  font-size: 14px;
+  color: #596182 !important;
+  font-family: ROBOTO;
+}
+
+.hotel-booknow-btn {
+  font-size: 10px;
+  font-family: ROBOTO;
+  color: white !important;
+  background-color: #3d63f9;
+  border-radius: 4px;
+  padding: 8px 31px 6px 30px;
+}
+
+.room-options-inner h6 {
+  color: #3c64f8;
+  font-size: 11px !important;
+  font-weight: 900;
+  font-family: R-BLACK;
+  margin-bottom: 0px !important;
+}
+
+.room-options-inner a:last-child {
+  color: #3d64f9 !important;
+  font-size: 12px !important;
+  font-family: ROBOTO;
+}
+
+.seperator {
+  border-left: 1px solid #3d63f95e;
+  height: 23px;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 11px;
+}
+
+.galery {
+  margin-top: 60px;
+  margin-bottom: 185px;
+}
+
+.gal-img-2,
+.gal-img-1 {
+  padding: 0px !important;
+}
+
+.gal-img-1 img {
+  width: 100%;
+  height: 338px;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.gal-img-2 img {
+  width: 100%;
+  height: 338px;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.gal-img-up img {
+  width: 100%;
+  height: 418px;
+  object-fit: cover;
+}
+
+.gal-img-down img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.about-us {
+  background-color: #1c3729;
+  padding-bottom: 40px;
+}
+
+.about-us a {
+  color: white;
+  text-transform: uppercase;
+  display: block;
+}
+
+.about-us p {
+  font-size: 16px;
+  color: #ffffff;
+  font-family: ROBOTO;
+}
+
+.footer-cont-links {
+  padding-left: 40px;
+}
+
+.footer-cont a {
+  margin-left: 14px;
+}
+
+.footer-cont a:first-child {
+  font-size: 24px !important;
+  font-family: ROBOTO !important;
+  margin-bottom: 30px !important;
+  margin-left: 0px !important;
+  padding-top: 80px !important;
+}
+
+.footer-cont img {
+  width: 100%;
 }
 
 @media (min-width: 1400px) {
@@ -343,6 +508,12 @@ option {
   .container-xl,
   .container-xxl {
     max-width: 1210px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sec-gallery {
+    display: none;
   }
 }
 
@@ -377,8 +548,10 @@ option {
     border-radius: 4px;
   }
 
-  .order-cont {
+  .order-cont,
+  .hotel-cont {
     justify-content: space-around;
+    padding: 0 10px;
   }
 
   .takeawey {
@@ -388,5 +561,11 @@ option {
 
   .food-menu-links a {
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .food-menu-links a:first-child {
+    margin-left: 30px !important;
   }
 }
