@@ -138,8 +138,7 @@ header {
   display: inline-block;
 }
 
-select,
-input,
+.input-sel,
 .booking-btn {
   width: 164px;
   padding: 10px;
@@ -150,7 +149,7 @@ input,
   font-size: 14px;
 }
 
-option {
+option.space {
   font-size: 14px;
   color: #1e2f23;
   font-family: ROBOTO;
@@ -500,6 +499,180 @@ option {
   width: 100%;
 }
 
+/* order page start */
+.order-page-header {
+  background-position: top !important;
+  padding-bottom: 0px;
+  margin-bottom: 35px;
+}
+
+.order-header-title {
+  color: white !important;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: ROBOTO;
+  font-weight: bold;
+  margin-top: 23px;
+}
+
+.order-direction {
+  text-align: center;
+  padding-bottom: 23px;
+}
+
+.order-direction a,
+.order-direction i {
+  font-size: 14px;
+  color: white;
+  font-family: ROBOTO;
+  font-weight: bold;
+}
+
+.sort-by {
+  font-family: ROBOTO;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 18px;
+}
+
+.food-picker {
+  font-size: 16px;
+  border-radius: 22px;
+  padding: 7px 80px 7px 30px;
+  outline: none;
+  border-color: rgba(128, 128, 128, 0.329);
+}
+
+.how-many {
+  font-size: 16px;
+  border-radius: 22px;
+  padding: 7px 54px 7px 30px;
+  outline: none;
+  border-color: rgba(128, 128, 128, 0.329);
+}
+
+.show,
+.more-filters {
+  margin-left: 45px;
+  font-family: ROBOTO;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 18px;
+}
+
+.pick {
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+  margin-bottom: 35px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.more-filters {
+  border: none;
+  outline: none;
+  margin-left: auto;
+}
+
+.order-page-menu {
+  padding-left: 0 !important;
+}
+
+.order-page-menu li a {
+  color: #666c75;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: ROBOTO;
+  font-weight: bold;
+  display: block;
+  width: 60%;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+}
+
+.order-page-menu li:hover a {
+  background-color: #193527;
+  color: rgb(121, 163, 53);
+  width: 80%;
+}
+
+.order-page-menu li:hover {
+  background-color: #193527;
+  width: 90%;
+}
+
+.order-page-menu li {
+  margin-right: 10px;
+  padding-left: 30px;
+}
+
+.order-page-menu li a i {
+  margin-right: 10px;
+}
+
+.order-page-card {
+  border-radius: 2px;
+  background-color: #193527;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.order-card-title h1 {
+  color: #fed348 !important;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: ROBOTO;
+  margin-top: 25px;
+}
+
+.order-card-description P {
+  font-size: 10px;
+  color: #fed348;
+  font-weight: 700;
+  font-family: ROBOTO;
+}
+
+.order-card-price {
+  width: 79px;
+  height: 79px;
+  border-radius: 50%;
+  background-color: #fed348;
+  padding-top: 23px;
+  margin: auto;
+  color: #193527 !important;
+  font-size: 24px;
+  font-family: ROBOTO;
+  font-weight: bold;
+  padding-right: 7px;
+  margin-bottom: 22px;
+}
+
+.order-card-price span {
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: 3px;
+}
+
+.order-card-btn {
+  font-size: 12px;
+  color: #193527 !important;
+  font-family: ROBOTO;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 8px 22px;
+}
+
+.order-card-btn i {
+  margin-right: 10px;
+}
+
+/*  */
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -522,8 +695,7 @@ option {
     flex-wrap: wrap;
   }
 
-  select,
-  input,
+  .input-sel,
   .booking-btn {
     margin-top: 2px;
     width: 100%;
@@ -567,5 +739,44 @@ option {
 @media (max-width: 767px) {
   .food-menu-links a:first-child {
     margin-left: 30px !important;
+  }
+
+  .pick {
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+    margin-bottom: 35px;
+    /* align-items: center;
+    flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .show,
+  .sort-by {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .order-page-content {
+    margin: auto !important;
+  }
+
+  .order-page-menu li a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .order-page-menu li:hover a {
+    background-color: #193527;
+    color: rgb(121, 163, 53);
+    width: 100%;
+  }
+
+  .order-page-menu li:hover {
+    background-color: #193527;
+    width: 100%;
   }
 }
