@@ -1,0 +1,157 @@
+/* .main {
+  margin: 30px auto;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.up,
+.down,
+.res {
+  padding: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.number {
+  font-size: 100px;
+  text-align: center;
+}
+
+.nav-bar {
+  height: 400px;
+  background-color: rgb(28, 19, 34);
+  display: flex;
+}
+
+.nav-list {
+  text-align: center;
+  background-color: orangered;
+  width: 100%;
+  margin-left: auto;
+  height: 400px;
+  transition: all 1s ease-in;
+}
+
+.nav-list li {
+  padding-top: 30px;
+  list-style: none;
+  cursor: pointer;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  color: white;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.nav-list li:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.di {
+  width: 40%;
+  display: flex;
+  margin-left: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(92%);
+  transition: transform 1s ease-in-out;
+}
+
+.di-show {
+  transform: translateX(0) !important;
+}
+
+.bi-list {
+  color: orangered;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.test-form {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.test-form input {
+  outline: none;
+}
+
+.show-pass {
+  cursor: pointer;
+}
+
+.forms {
+  display: flex;
+  flex-wrap: wrap;
+}
+.someDiv,
+.secDiv {
+  width: 50%;
+}
+
+.borders {
+  border: 1px solid grey;
+  text-align: center;
+  width: 100%;
+}
+
+.buton {
+  display: block;
+  margin-bottom: 30px;
+} */
+
+.box {
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #d8d6f5;
+  border-radius: 10px;
+}
+
+.box h2 {
+  color: rgb(186, 149, 228);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border: 1px solid #b9b6e3;
+  border-radius: 10px;
+}
+.tags input {
+  outline: none;
+  border: none;
+}
+
+.tags-text span {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #e7d4fd;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.tags-text span i {
+  margin-left: 5px;
+  color: #5726b7;
+  cursor: pointer;
+  font-size: 14px;
+}
