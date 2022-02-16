@@ -12,6 +12,7 @@
   width: 100%;
   transition: all 0.3s ease-in;
   opacity: 1;
+  z-index: 99999;
 }
 
 .navbar.scroll-down {
@@ -35,8 +36,41 @@
 section p {
   width: 40%;
   margin: auto;
+  margin-top: 30px;
 }
 
 section {
   margin-top: 80px;
+}
+
+.content {
+  background-color: rgb(245, 0, 82);
+  width: 300px;
+  height: 80px;
+  border-radius: 30px;
+  margin: 30px auto;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.content span {
+  cursor: arrow;
+}
+
+.mouse__over {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 255);
+  position: absolute;
+  box-shadow: 0px 0px 50px 50px rgb(0, 0, 255);
+  transition: all 0.1s ease;
+  top: 25%;
+  left: 0;
+  opacity: 0;
 }
