@@ -21,9 +21,9 @@ window.addEventListener('scroll',()=>{
 
 //mouse over start
 const content = document.querySelector('.content');
- content.addEventListener('mouseover',(e)=>{
+ content.addEventListener('mousemove',(e)=>{
    let colorChange = document.querySelector('.mouse__over');
-   colorChange.style.left = (e.clientX - 810 ) + 'px';
+   colorChange.style.left = (e.clientX - content.offsetLeft) + 'px';
    colorChange.style.opacity = 1;
 });
 
