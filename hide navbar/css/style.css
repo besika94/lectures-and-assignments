@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(56, 18, 117);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease-in;
+  opacity: 1;
+}
+
+.navbar.scroll-down {
+  opacity: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+}
+
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+section p {
+  width: 40%;
+  margin: auto;
+}
+
+section {
+  margin-top: 80px;
+}
