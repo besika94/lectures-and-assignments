@@ -29,7 +29,6 @@ const content = document.querySelector('.content');
 
 content.addEventListener('mouseout',(e)=>{
   let colorChange = document.querySelector('.mouse__over');
- 
   colorChange.style.opacity = 0;
 });
 
