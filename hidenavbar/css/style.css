@@ -60,6 +60,21 @@ section {
   border: none;
 }
 
+.text__apear {
+  margin: 30px auto;
+  width: 15%;
+  text-align: center;
+  background-color: black;
+  color: green;
+  font-weight: bold;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
 .content span {
   cursor: arrow;
   z-index: 3;

@@ -34,3 +34,50 @@ content.addEventListener('mouseout',(e)=>{
 
 
 
+let text = "If you're always trying to be normal you will never know how amazing you can be";
+
+let timer;
+i= 0;
+function write(){
+ 
+ document.querySelector('.text__apear').append(text[i]);
+  
+  i++;
+
+  if(i >= text.length) 
+    clearInterval(timer);
+}
+
+timer = setInterval(write,100);
+
+
+
+  
+
+
+
+
+
+// let count = 0;
+//   while (count <= text.length){
+   
+    
+//     count++
+
+
+    
+//   }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
