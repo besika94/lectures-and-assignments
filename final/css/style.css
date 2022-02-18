@@ -927,6 +927,131 @@ footer {
   top: -50px;
 }
 
+/*reservation page start*/
+
+.reservation-page-subhead {
+  background-image: url(../img/res-img.png);
+  background-repeat: no-repeat;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-page-subhead h1 {
+  margin: 0 5px;
+  color: #fff;
+  font-size: 56px;
+  font-family: DISPLAY-BOLD;
+}
+
+.reserve-text h1 {
+  font-size: 35px;
+  color: #14141d;
+  font-weight: bold;
+  font-family: DISPLAY-BOLD;
+  text-align: center;
+  margin-top: 95px;
+}
+
+.reserve-text p {
+  font-size: 14px;
+  color: #5c6369;
+  font-weight: bold;
+  font-family: SINTONY-REGULAR;
+  text-align: center;
+  margin: 30px auto;
+  width: 70%;
+}
+
+.reserve-page-btn {
+  margin: auto;
+  text-align: center;
+}
+
+.special-res {
+  background-color: #5c6369;
+  padding: 100px 0;
+  margin-top: 100px;
+}
+
+.sr-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: DISPLAY-BOLD;
+  color: white;
+  margin-bottom: 30px !important;
+}
+
+.reserve-card img {
+  width: 100%;
+}
+.reserve-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.r-middle-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #fe4c8d !important;
+  color: white;
+}
+
+.r-middle-card a {
+  text-decoration: none;
+  color: white;
+}
+
+.r-middle-card i {
+  font-size: 30px;
+}
+
+.res-text {
+  font-size: 13px;
+  font-family: SINTONY-BOLD;
+  margin-bottom: 23px;
+  padding: 0 !important;
+}
+
+.reserve-card {
+  width: 350px;
+  height: 400px !important;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.res-card-cont {
+  padding: 40px 50px;
+}
+
+.res-card-cont h2 {
+  font-size: 26px !important;
+  color: #14141d;
+  font-family: DISPLAY-BOLD;
+  text-align: start;
+}
+
+.res-contact {
+  font-size: 24px;
+  font-family: DISPLAY-BOLD;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
+.res-card-cont p {
+  font-size: 14px !important;
+  color: #5c6369;
+  font-family: SINTONY-REGULAR;
+  text-align: start;
+}
+
 /* menu page end*/
 
 /* media queri */
@@ -996,6 +1121,10 @@ footer {
 
   .food-menu-card-cont {
     padding: 20px;
+  }
+
+  .reserve-flex {
+    justify-content: space-around;
   }
 }
 
