@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -21,6 +25,21 @@
     </nav>
 
     <section>
+      <div class="btn__div">
+        <button class="trash__btn">
+          <i class="bi bi-trash3-fill"></i>
+          <span>are you sure?</span>
+          <a href="#" class="delete">Yes, delete this file</a>
+        </button>
+      </div>
+
+      <div class="tog">
+        <button class="tog__btn">Start Animate</button>
+        <div class="div__tog">
+          <span class="text__tog">jquery</span>
+        </div>
+      </div>
+
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum numquam,
         soluta consectetur eveniet quibusdam nisi dolore fugit perferendis sed
@@ -151,6 +170,9 @@
         distinctio nesciunt facilis adipisci temporibus, mollitia officiis ipsam
       </p>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jq/jq.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

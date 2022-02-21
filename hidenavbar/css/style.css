@@ -95,3 +95,104 @@ section {
   left: 0;
   opacity: 0;
 }
+
+.btn__div {
+  display: flex;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+}
+
+.trash__btn.active__btn {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px grey;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trash__btn.active__btn i {
+  opacity: 0;
+}
+
+.trash__btn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trash__btn span,
+.trash__btn a {
+  opacity: 0;
+  margin-bottom: 10px;
+}
+
+.trash__btn a {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  background-color: rgb(255, 0, 106);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.trash__btn span {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.trash__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: rgb(255, 0, 106);
+  margin: auto;
+  cursor: pointer;
+  transition: all 1s ease-out;
+  display: inline-block;
+  position: relative;
+}
+
+.tog {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div__tog {
+  margin-top: 20px;
+  width: 200px;
+  height: 100px;
+  background-color: grey;
+  padding: 10px;
+  transition: all 0.6s ease-in-out;
+}
+
+.text__tog {
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+
+.tog__btn {
+  padding: 5px;
+  border: none;
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+}
