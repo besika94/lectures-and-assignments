@@ -5,7 +5,6 @@
 }
 
 button {
-  margin: 0;
   display: inline-block;
   padding: 4px 10px;
   text-transform: capitalize;
@@ -34,7 +33,7 @@ button:hover {
   display: flex;
   width: 80%;
   margin: 30px auto;
-  /* justify-content: center; */
+
   flex-wrap: wrap;
 }
 
@@ -47,16 +46,23 @@ button:hover {
   border-radius: 4px;
 }
 
-/* .audi,
-.bmw,
-.mercedes {
-  display: flex;
-  flex-wrap: wrap;
-  height: fit-content;
-  width: 300px;
-  justify-content: center;
-} */
-
 h1 {
   margin-bottom: 30px;
+}
+
+.modal-card {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 1px solid grey;
+  padding: 10px;
+  text-align: center;
+}
+
+.modal-text {
+  margin-top: 30px;
+}
+
+.hide {
+  display: none;
 }

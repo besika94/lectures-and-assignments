@@ -1,4 +1,5 @@
 $(function () {
+  // click events
   $(".audi-btn").click(function (e) {
     e.preventDefault();
     if ($(".audi-btn").attr("data") == $(".audi-img").attr("data")) {
@@ -43,4 +44,19 @@ $(function () {
     b.hide(500);
     c.hide(500);
   }
+
+  let b = 6;
+
+  let int = setInterval(function () {
+    b--;
+    $(".modal-count").text(b);
+
+    if (b == 0) {
+      $(".modal-card").addClass("hide");
+    }
+  }, 1000);
+
+  setTimeout(function () {
+    clearInterval(int);
+  }, 6000);
 });
