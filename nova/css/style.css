@@ -70,6 +70,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px 90px;
+  z-index: 999999;
 }
 
 .modal-content i {
@@ -79,6 +80,7 @@
   font-size: 28px;
   color: grey;
   cursor: pointer;
+  z-index: 999999;
 }
 
 .bi-arrow-left-circle {
@@ -105,4 +107,20 @@
   cursor: pointer;
   border-radius: 3px;
   margin: 0 5px;
+}
+
+.modal-prev {
+  border-radius: 10px;
+}
+
+/*sweeper*/
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
 }
