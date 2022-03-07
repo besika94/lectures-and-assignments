@@ -101,4 +101,45 @@ $(function () {
       el: ".swiper-scrollbar",
     },
   });
+  $(".about").click(function (e) {
+    e.preventDefault();
+
+    $.ajax({
+      type: "get",
+      url: "about.html",
+      data: "data",
+      dataType: "html",
+      success: function (response) {
+        $(".ajax-content").html(response);
+      },
+    });
+  });
+
+  $(".contact").click(function (e) {
+    e.preventDefault();
+
+    $.ajax({
+      type: "get",
+      url: "contact.html",
+      data: "data",
+      dataType: "html",
+      success: function (response) {
+        $(".ajax-content").html(response);
+      },
+    });
+  });
+
+  $(".product").click(function (e) {
+    e.preventDefault();
+
+    $.ajax({
+      type: "get",
+      url: "product.html",
+      data: "data",
+      dataType: "html",
+      success: function (response) {
+        $(".ajax-content").html(response);
+      },
+    });
+  });
 });

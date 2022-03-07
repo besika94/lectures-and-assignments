@@ -4,6 +4,69 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.ajax ul {
+  height: 50px;
+  display: flex;
+  background-color: rgb(79, 154, 224);
+  box-shadow: 0 0 3px grey;
+  justify-content: center;
+  align-items: center;
+}
+
+.ajax ul li {
+  list-style: none;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.about-us {
+  width: 30%;
+  margin: 30px auto;
+  box-shadow: 0 0 3px grey;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.about-us p {
+  width: 100%;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.about-us h1 {
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.contact-info {
+  width: 30%;
+  margin: 20px auto;
+  box-shadow: 0 0 3px grey;
+  padding: 20px;
+  text-align: start;
+}
+
+.contact-info ul {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.contact-info li {
+  margin-bottom: 5px;
+}
+
+.ajax-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .content {
   display: flex;
   width: 800px;
