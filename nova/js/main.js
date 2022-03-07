@@ -142,4 +142,17 @@ $(function () {
       },
     });
   });
+
+  let obj = {
+    name: "beso",
+    lastName: "vepkhvadze",
+    age: 27,
+  };
+
+  obj = JSON.stringify(obj);
+
+  console.log(obj);
+
+  obj = JSON.parse(obj);
+  console.log(obj);
 });
