@@ -1,0 +1,14 @@
+.content {
+  width: 30%;
+  margin: 100px auto;
+  border: 1px solid grey;
+}
+
+ul {
+  width: 50%;
+  margin: 10px auto;
+}
+
+li {
+  list-style: none;
+}
