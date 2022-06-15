@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: "Karla", sans-serif;
+}
+
+.row {
+  --bs-gutter-y: 0 !important;
+  --bs-gutter-x: 0 !important;
+}
+
+.goFull {
+  width: 100% !important;
+}
+.right-panel {
+  background: #8080804f;
+  transition: all 0.6s ease-in-out;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.left-panel {
+  transition: all 0.6s ease-in-out;
+}
+
+.left-panel.active {
+  width: 0;
+}
+
+.sidebar.hide {
+  transform: translatex(-100%);
+}
+
+.sidebar {
+  transition: all 0.6s ease-in-out;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 16.6666%;
+  height: 100vh;
+  background-color: rgb(16, 44, 71);
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: auto;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin-top: 10px;
+  padding: 8px 10px 8px 15px;
+}
+
+.sidebar ul li:hover {
+  background-color: rgba(121, 121, 121, 0.548);
+}
+
+.sidebar ul li a {
+  color: white;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+}
+
+.sidebar ul li a i {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.sidebar ul li:first-child {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.sidebar ul li:first-child a {
+  font-size: 16px;
+}
+
+.sidebar ul li:last-child {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.bi-chevron-down {
+  margin-left: auto;
+}
+
+.collapsed a {
+  display: block;
+  padding: 5px 0 5px 60px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family: "Karla", sans-serif;
+}
+
+.collapsed a:hover {
+  background-color: rgba(121, 121, 121, 0.548);
+}
+
+.profie-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.navbar {
+  box-shadow: 2px 1px 8px -3px;
+}
+
+.profile-name {
+  font-size: 12px;
+  font-family: "Karla", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.profile-company {
+  font-size: 12px;
+  font-family: "Karla", sans-serif;
+  margin-right: 40px;
+}
+
+.bi-bell {
+  font-size: 17px;
+  color: #1e66e9;
+  margin-right: 10px;
+}
+
+.months {
+  display: flex;
+  padding: 20px;
+}
+
+.months span {
+  display: inline-block;
+}
+
+.months .bi-chevron-left,
+.months .bi-chevron-right,
+.mid-month {
+  color: rgb(48, 49, 82);
+}
+
+.month {
+  background-color: rgb(255, 255, 255);
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.left-arrow {
+  border-right: 1px solid rgb(207 207 207);
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-size: 13px;
+  padding-top: 3px;
+}
+
+.right-arrow {
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgb(207 207 207);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 13px;
+  padding-top: 3px;
+}
+
+.time-period {
+  font-size: 13px;
+  padding: 20px;
+}
+
+.time-period span {
+  padding: 4px 10px;
+  background-color: white;
+}
+
+.time-period span:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.time-period span:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.progress,
+.calendar {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.progress {
+  position: relative;
+  height: 92px;
+  display: flex;
+  margin-top: 70px;
+}
+
+.bi-bar-chart-steps {
+  position: absolute;
+  left: 42px;
+  font-size: 15px;
+  top: 35px;
+  color: #1e66e9;
+}
+
+.progress svg {
+  width: 50%;
+}
+
+.progress svg circle {
+  fill: none;
+  stroke: #1e66e9;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 20;
+}
+
+.number {
+  padding: 5px;
+}
+
+.number p {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: start;
+}
+.number span {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+  margin: auto;
+  /* margin: 4px; */
+}
+table tr:nth-child(odd) {
+  background-color: white;
+}
+table td {
+  text-align: center;
+  font-size: 13px;
+  padding: 8px;
+}
+.t-head td {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: white;
+}
+.t-head td:first-child {
+  border-top-left-radius: 5px;
+}
+
+.t-head td:last-child {
+  border-top-right-radius: 5px;
+}
